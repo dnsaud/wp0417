@@ -11,20 +11,34 @@
 
     <!-- 
         html 요소 
-        1. 블록레벨요소: h1~h6, p, hr, div 위 아래  블록라인안에 인라인 사용
-        2. 인라인요소: b, strong, em, i, mark, small, sub, sup, ins, del, br, span 가로
+        1. 블록레벨요소: 위에서 아래로 세로 배치 줄바꿈 
+        h1~h6, p, hr, div, ul, li, form, table, header, nav, main, aside, article, footer, section 위 아래  블록라인안에 인라인 사용
+        2. 인라인요소: 좌에서 우로 배치 쓴대로 배치 가로 배치 줄바꿈x 
+            b, strong, em, i, mark, small, sub, sup, ins, del, br, span, input, select 가로
      -->
      
     <h1>블록과 인라인</h1>
 
     <h2>블록 레벨 요소</h2>
     <div>div1</div>
-    <div>div2</div>
-    <div>div3</div>
+    <h3>난 제목</h3>
+    <p>나는 단락이다.</p>
+    <ul><li>목록</li></ul>
+    <form><input type="text"></form>
+    <table><tr><td>표</td></tr></table>
+    <hr>
 
+    
     <h2>인라인 요소</h2>
     <span>span1</span>
-    <span>span2</span>
-    <span>span3</span>
+    <b>b</b>
+    <i>i</i>
+    <em>em</em>
+    <strong>strong</strong>
+    <a href="#">a</a>
+    <input type="text">
+    <button>버튼</button>
+    <select><option>select</option></select>
+    
 </body>
 </html>
