@@ -40,8 +40,15 @@
           
           */
 
-        /* rgba(0~255, 0~255, 0~255, 0~1) */ 
-        /
+        /* rgba(0~255, 0~255, 0~255, 0~1) */
+                /* 
+            rgba(R, G, B, alpha)
+            alpha는 투명도(0: 투명, 1: 불투명, 0.5:반투명)
+            rgba(0, 0, 0, 0.5)
+            콤마(,) 사이 공백 생략 가능
+            0.5에서 소숫점 앞의 0은 생략 가능
+            rgba(255, 0, 0, .5)
+        */ 
 
         /* hsl(0~359, 0~100%, 0~100%) */
         /* 
@@ -61,11 +68,11 @@
     
 
             .colorName {color: red;}
-            .colorhex {color: red;}
-            .colorrgb {color: red;}
-            .colorrgba {color: red;}
-            .colorhsl {color: red;}
-            .colorhsla {color: red;}
+            .colorhex {color: #ff0000;}
+            .colorrgb {color: rgb(255, 0, 0);}
+            .colorrgba {color: rgba(255, 0, 0, 1);}
+            .colorhsl {color: hsl(0, 100%, 50%);}
+            .colorhsla {color: hsla(0, 100%, 50%, 0.5);}
 
     </style>
 </head>
