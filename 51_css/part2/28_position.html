@@ -35,9 +35,14 @@
             /* left, top, right, bottom, z-index은 static에는 적용되지 않는다. */
             left: 200px;
             top: 100px;
+            left: 200px;
+            top: 100px;
         }
 
         /* (1) .pos1의 위치 속성을 static로 지정하시오. */
+        .pos1 {
+            position:static
+        }
 
 
         /* (2) .pos2의 위치 속성을 relative로 지정하시오. */
@@ -54,7 +59,11 @@
         /* 창 기준 */
         /* (4) .pos4의 위치 속성을 fixed로 지정하시오. */
         .pos4 {
-            z-index: 2;
+            position: flxed;
+            left: 300px;
+            top: 150px;
+            background: blue;
+            z-index: 4;
         }
 
         /* .container {
