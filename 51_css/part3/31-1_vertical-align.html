@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
-        /* display 속성이 inline, inline-block 요소에 적용된다. */
-        p {text-decoration: underline overline; font-size: 3rem; line-height: 3em;}
+        /* display 속성이 inline, inline-block, table-cell 요소에 적용된다. 
+           dispaly: inline; > <span>, <b>, <i>, <img>
+           dispaly: inline-block; > <button>, <input>
+           display: table-cell; > <td>, <th>
+
+        */
+
+        p {
+            text-decoration: underline overline;
+            font-size: 3rem;
+            line-height: 3em;
+        }
 
         /* 
             baseline: 부모 요소의 기준선(baseline)에 맞춤(기본값)
@@ -24,8 +35,16 @@
         /* % 단위는 부모 요소의 줄 간격 기준, 음수 가능 */
         /* em 단위는 부모 요소의 글꼴 크기, 음수 가능 */
 
+        .vat img {vertical-align: top;}
+        .vam img {vertical-align: middle;}
+        .vab img {vertical-align: bottom;}
+        .vapx img {vertical-align: 144px;}
+        .vaem img {vertical-align: 3em;}
+        .vaper img {vertical-align: 100%;}
+
     </style>
 </head>
+
 <body>
     <h1>수직 정렬</h1>
     <p class="vat">vertical-align:top; <img src="/51_css/assets/star2.png" alt="스타2"></p>
@@ -36,4 +55,5 @@
     <p class="vaem">vertical-<sub>align</sub>: em; <img src="/51_css/assets/star2.png" alt="스타2"></p>
     <p class="vaper">vertical-<sub>align</sub>: %; <img src="/51_css/assets/star2.png" alt="스타2"></p>
 </body>
+
 </html>
