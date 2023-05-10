@@ -24,17 +24,41 @@
             transition: .5s;
         }
 
-        /* 
-            transform: translate(x, y);
-            transform: scale(w, h);
-            transform: rotate(각도); (단위: deg)
-            transform: skew(각도, 각도) (단위: deg);
+        /*  이동
+            transform: translate(x, y); x로만 가능            transform: translate(x, y); y로만 가능
+            transform: translate(x, y); xyz
+            transform: translate(x, y); xy        
+            
+            크기조절
+            transform: scalex(x);
+            transform: scaley(y);
+            transform: scalez(z);
+            transform: scale3d(x,y,z);
+            transform: scale(w,y);
+            
+            회전
+            transform: rotatex(각도); (단위: deg)
+            transform: rotaty(각도); (단위: deg)
+            transform: rotatez(각도); (단위: deg)
+            transform: rotat3d(x,y,z위치); (단위: deg)
+            transform: rotate(x,y); (단위: deg)
+            
+            기울기
+            transform: skewx(각도, 각도) (단위: deg);
+            transform: skewy(각도, 각도) (단위: deg);
+            transform: skewx(x각도,y각도) (단위: deg);
         */
 
         /* .outer에 마우스를 올렸을 때 .trftr의 위치를 가로로 100px 이동되게 하시오. */
+        .outer:hover .trftr {
+            transform: translate(100px, 0);
+        } 
 
 
         /* .outer에 마우스를 올렸을 때 .trfsc의 크기를 너비/높이 모두 1.2로 지정하시오. */
+        .outer:hover .trfsc {
+            transform: scale(1.2, 1.2);
+        }
 
 
         .trfro {
@@ -42,6 +66,11 @@
             transform-origin: 0 0;
         }
         /* .outer에 마우스를 올렸을 때 .trfro를 60도 회전되도록 지정하시오. */
+        .outer:hover .trfro {
+            transform: rotatex(60);
+        } 
+        
+        
 
 
         /* .outer에 마우스를 올렸을 때 .trfrox를 x축 기준으로 60도 회전되도록 지정하시오. */
