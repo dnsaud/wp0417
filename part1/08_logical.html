@@ -13,6 +13,14 @@
     <script>
         /* 
             논리 연산자: ||(또는), &&(그리고), !(아니다)
+
+
+            연산자의 우선순위
+            1. ()
+            2. 산술
+            3. 비교
+            4. 논리
+            5. 대입
             
             연산자의 우선순위
             18. ()
@@ -39,6 +47,13 @@
         var n = 40;
         var result;
 
+        result = a > b || a < b;
+        document.write(result, '<br>');
+
+        result = a > b && a < b;
+        document.write(result, '<br>');
+
+        result = a > b || a < b;
         document.write(result, '<br>');
         
     </script>

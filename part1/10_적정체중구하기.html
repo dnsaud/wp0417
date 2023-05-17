@@ -22,16 +22,20 @@
         */
 
         // 입력
-        var userName;
-        var userHeight;
-        var userWeight;
-
+        var userName = prompt('당신의 이름을 입력하세요.');
+        var userHeight = prompt('당신의 키를 입력하세요.');
+        var userWeight = prompt('당신의 몸무게를 입력하세요.');
+        var normal_w;
+        var over_w;
+        var result;
+        
         // 처리
         // 적정 체중 = (신장 - 100) * 0.9
-
+        result = (userHeight - 100) * 0.9;
+        over_w = userWeight - normal_w
         
         // 오차 범위 ±5
-
+        
 
         // 출력
         document.write(userName + '님은 ' + result);
