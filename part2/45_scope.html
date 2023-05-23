@@ -13,13 +13,48 @@
     <script>
         /* 
             스코프(Scope): 변수 또는 함수의 유효 범위
+            
+            변수 선언의 키워드
+            var(재선언, 재할당) > let(재할당), const
 
             지역 변수(Local Variables)
                 - 스코프 영역에서 선언한 변수로 스코프 영역에서만 사용할 수 있다.
             전역 변수(Global Variables)
                 - 자바스크립트 모든 영역에서 사용할 수 있는 변수
         */
+    // 변수 선언 할당
+    var a = 10;
+    
+    // 변수 선언
+    var a;
+    // 재선언
+    var a;
+    let aa = 2;
+    document.write(a + a, '<br>');
+    
 
+    // 변수의 값을 할당
+    a = 10;
+
+    // 전역 변수
+    var a =1;
+    document.write(a + a, '<br>');
+
+    function myFn() {
+        // 지역 변수 ~ 함수 내부에서 선언한 변수
+        var b = 2;
+        document.write(b + b, '<br>');
+
+    }
+    function myFn2() {
+        // 지역 변수 ~ 함수 내부에서 선언한 변수
+        var c = 3;
+        document.write(c + c, '<br>');
+
+    }
+
+    myFn();
+    myFn2();
 
 
     </script>
