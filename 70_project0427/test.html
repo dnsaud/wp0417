@@ -19,31 +19,27 @@
             height: 500px; overflow: hidden;}
         footer {height: 100px; background: #555;}
 
-        /* 로고 */
-        .logo {text-align: center;line-height: 100px;}
+         /* 로고 */
+         .logo {text-align: center; line-height: 100px;}
 
-        /* 메인 타이틀 */
-        h2 {
-            position: absolute; z-index: 9999;
-            left: 50%
-            top: 50%
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-            color: #fff;
-            text-shadow: 1px 1px 5px #000;
-        }
+/* 메인 타이틀 */
+h2 {
+    position: absolute; z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
 
-
-        /* 슬라이드 */
-        ul {
-            position: absolute; top:0; left:0; height: 400%;
-            animation: slide 9s infinite;
-        }
-        li{
-            width: 1000px;
-            height: 500px;
-            overflow: hidden;
-        }
+/* 슬라이드 */
+ul {position:absolute; top:0; left:0; height: 400%;
+    animation: slide 9s infinite;
+}
+li {
+    width: 1000px; height: 500px; overflow: hidden;
+}
 
         @keyframes slide {
             0% {top: 0%;}
