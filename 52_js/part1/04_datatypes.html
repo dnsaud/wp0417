@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+<body>
+    <h1>데이터 유형</h1>
+    <script>
+        /* 
+            데이터 유형
+            1. string(문자열): '십', '10', "10", 'True' ...
+            2. number(숫자): 10, 0, -10, 3.14, ...
+            3. boolean(부울): true, false
+            4. undefined
+            5. object(객체): null
+
+            undefined
+                - 변수에 값이 등록되기 전의 기본값
+                - 변수를 선언 후 값을 할당하지 않았을 때
+            null
+                - 변수에 저장된 데이터 삭제
+                
+            Boolean() 함수는 false, 숫자 0과 null, undefined, 빈 문자('')를 제외한 모든 데이터에 대해 true를 반환(return)한다.
+        */
+
+        // string
+        let s1 = '자바스크립트';
+        let s2 = '100';
+        let s3 = '<h3>제목</h3>';
+        // 숫자 100을 문자열 100으로 변환
+        let s4 = String(100);
+
+        // number
+        let n1 = 100;
+        let n2 = -3.14;
+        // 문자열 '100'을 숫자 100으로 변환
+        let n3 = Number('100');
+        // NaN(Not a Number, 숫자가 아니다.)
+        let n4 = Number('백');
+
+        // boolean
+        let b1 = true;
+        let b2 = false;
+        let b3 = Boolean(0);
+        let b4 = Boolean(null);
+        let b5 = Boolean(undefined);
+        let b6 = Boolean('');
+        let b7 = Boolean(false);
+
+        // undefined
+        let und;
+
+        // object
+        let obj = 100;
+        obj = null;
+
+        // 출력
+        // 객체.메서드(매개변수1, 매개변수2, ...)
+        // document.write(표현식1[, 표현식2][, 표현식3][, ...])
+        // document.write('문자열')
+        // document.write(변수, 'HTML문자열')
+
+        document.write(s1, '<br>');
+        document.write(s2, '<br>');
+        document.write(s3, '<br>');
+        document.write(s4, '<br><br>');
+        document.write(n1, '<br>');
+        document.write(n2, '<br>');
+        document.write(n3, '<br>');
+        document.write(n4, '<br>');
+        document.write(b1, '<br>');
+        document.write(b2, '<br>');
+        document.write(b3, '<br>');
+        document.write(b4, '<br>');
+        document.write(b5, '<br>');
+        document.write(b6, '<br>');
+        document.write(b7, '<br>');
+        document.write(und, '<br>');
+        document.write(obj, '<br>');
+    </script>
+</body>
+
+</html>
