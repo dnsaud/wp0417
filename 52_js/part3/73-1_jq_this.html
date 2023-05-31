@@ -21,12 +21,14 @@
         <li>목록3</li>
         <li>목록4</li>
     </ul>
-
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+    <script> 
         /* 
-            $(this) ~ 이벤트를 발생시킨 주체
+        $(this) ~ 이벤트를 발생시킨 주체 this 하나만 쓰면 클릭한거만 바뀜!
         */
-
+        $('li').click(function(){
+            $(this).css({color: 'red'});
+        });
     </script>
 </body>
 

@@ -40,18 +40,33 @@
             Event(이벤트): 웹 문서 영역 안에서 웹 브라우저 또는 사용자가 행하는 동작
 
             이벤트 종류
-            1. 마우스 이벤트: click, mouseenter, mouseleave, mousemove
+            1. 마우스 이벤트: click, mouseenter(마우스 들어갈때), mouseleave(마우스 나올때), mousemove(위에서 움직이기)
             2. 키보드 이벤트: keydown, keypress, keyup
-            3. 윈도우 이벤트: scroll, resize
+            3. 윈도우 이벤트: scroll(스크롤바 움직일때), resize
 
             이벤트 처리기(이벤트 핸들러): 이벤트가 발생할 때 처리하는 함수
 
-            이벤트 형식:
+            이벤트 메서드 형식({}) 매개변수는 메서드마다 다르다.
+            $('선택자').css({});
+            $('선택자').click(;
+            
             $('선택자').이벤트(function(){});
 
             $('선택자').on('이벤트', function(){});
         */
 
+        // 박스1 클릭했을 때
+        // 박스1 배경색을 노랑으로 지정하시오.
+        // $('.box1').click(function(){
+            // $('.box1').css({backgroundColor:'yellow'}); 
+        // }); 
+        // $('.box1').on('mouseenter', function(){
+            // $('.box1').css({color:'black'});
+        // });
+        // $('선택자').css({'background-color':'yellow'}); 
+        // 카멜(낙타)표기법
+        // 'font-size' fontSize
+        
         $('.box1').click(function(){
             $('p').text('box1을 클릭했습니다.');
         });
