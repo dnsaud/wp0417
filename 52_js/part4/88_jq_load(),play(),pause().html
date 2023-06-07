@@ -42,7 +42,23 @@
             $('video').get(n).load() ~ 비디오 불러오기
             $('video').get(n).play() ~ 비디오 재생하기
             $('video').get(n).pause() ~ 비디오 불러오기
+            pause 일시정지
         */
+        // 이벤트 메서드의 매개변수는 함수
+        $('.load').click(function(){
+            // 비디오를 처음 상태로
+            $('video').load();
+        })
+        $('.play').click(function(){
+            // 비디오를 실행
+            $('video').play();
+        })
+        $('.pause').click(function(){
+            // 비디오를 일시정지
+            $('video').pause();
+        })
+
+
 
 
     </script>

@@ -23,6 +23,27 @@
             e.pageX ~ 브라우저상 마우스 커서의 x축 좌표
             e.pageY ~ 브라우저상 마우스 커서의 y축 좌표
         */
+        // 창 위에 마우스를 이동하면 마우스의 x좌표와 y좌표를 span 요소에 출력하시오.
+
+        // $('선택자')
+        // $("선택자")
+        // $(window) ~ BOM 객체
+        // $(document) ~ DOM 객체
+        // $(this) ~ this는 키워드
+        // 속성: pageX, pageY
+        
+        // 창에서 마우스를 움직이면 
+        $(window).mousemove(function(e){
+            // 마우스의 x좌표
+            let mouseX = e.pageX;
+            $('.posX').text(e.pageX);
+            // 마우스의 y좌표
+            let mouseY = e.pageY;
+            $('.posY').text(e.pageY);
+
+        });
+
+        
 
 
     </script>
