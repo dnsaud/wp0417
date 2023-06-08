@@ -45,7 +45,7 @@
         }
         /* 1depth */
         .main {
-            display: flex;
+            /* display: flex; */
         }
         .main>li {
             width: 150px;
@@ -135,12 +135,13 @@
     // stop은 이전 동작을 정지 stop은 효과 메서드 앞에만 붙인다.
     // 효과 메서드: hide(), show(), fadein(), fadeout(), slideup(), slidedown(), animate(), ...
     $(".main > li").mouseenter(function () {
-        $(this).children(".sub").stop().slideDown();
+        // children (자식만) find (자식+손자)
+        $(this).find(".sub").stop().slideDown();
     });
     // 메인메뉴li에서 마우스가 벗어나면 함수 실행
     $(".main > li").mouseleave(function () {
         // 마우스가 벗어난 li의 자식 .sub가 아래에서 위로 사라진다.
-        $(this).children(".sub").stop().slideUp();
+        $(this).find(".sub").stop().slideUp();
     });
     
     </script>
