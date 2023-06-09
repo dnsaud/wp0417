@@ -13,6 +13,7 @@
     <div id="galleryZone">
         <p>
             <!-- 인라인 스크립트 -->
+            <!-- onclick이란? HTML의 이벤트 속성 -->
             <button onclick="gallery(0);">이전</button>
             <button onclick="gallery(1);">다음</button>
         </p>
@@ -35,13 +36,32 @@
                 var 변수 = 함수명();
         */
 
-        var num = 1;
+            const btn1 = document.querySelector('.btn1')
+            const btn2 = document.querySelector('.btn2')
+
+            btn1.onclick = imgFn1;
+            btn2.onclick = imgFn2;
+
+            function imgFn() {
+                gallery(0);
+            }
+            function imgFn() {
+                gallery(1);
+            }
+
+        let num = 1;
         function gallery(direct) {
             if (direct) {
+                // num이 8과 같으면 함수 종료
                 if (num == 8) return;
+                // num이 1씩 증가
+                // num = num + 1;
+                // num += 1;
                 num++;
             } else {
+                // num이 1과 같으면 함수 종료
                 if (num == 1) return;
+                // num을 1씩 감소
                 num--;
             }
 
@@ -49,7 +69,7 @@
             imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
         }
 
-        /* 
+        /*
             객체.메서드();
             document.write();
             document.getElementById('아이디명'); ~ 문서에 아이디명에 해당하는 요소를 가져온다.
